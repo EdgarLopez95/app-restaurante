@@ -3,60 +3,70 @@
     "Title": "Wine - Jaboulet Cotes Du Rhone",
     "image": "http://dummyimage.com/217x100.png/5fa2dd/ffffff",
     "recipe": "Olives - Black, Pitted",
+    "price": 3200,
     "id": 1
   },
   {
     "Title": "Spring Roll Veg Mini",
     "image": "http://dummyimage.com/144x100.png/5fa2dd/ffffff",
     "recipe": "Beef - Eye Of Round",
+    "price": 3200,
     "id": 2
   },
   {
     "Title": "Beef - Eye Of Round",
     "image": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
     "recipe": "Salmon - Sockeye Raw",
+    "price": 3200,
     "id": 3
   },
   {
     "Title": "Cafe Royale",
     "image": "http://dummyimage.com/186x100.png/cc0000/ffffff",
     "recipe": "Mustard - Individual Pkg",
+    "price": 3200,
     "id": 4
   },
   {
     "Title": "Crush - Orange, 355ml",
     "image": "http://dummyimage.com/184x100.png/cc0000/ffffff",
     "recipe": "Lid Coffeecup 12oz D9542b",
+    "price": 3200,
     "id": 5
   },
   {
     "Title": "Chicken - Leg, Boneless",
     "image": "http://dummyimage.com/177x100.png/ff4444/ffffff",
     "recipe": "Soup - Campbells Chili",
+    "price": 3200,
     "id": 6
   },
   {
     "Title": "Wine - Riesling Alsace Ac 2001",
     "image": "http://dummyimage.com/212x100.png/5fa2dd/ffffff",
     "recipe": "Skirt - 24 Foot",
+    "price": 3200,
     "id": 7
   },
   {
     "Title": "Pie Shell - 9",
     "image": "http://dummyimage.com/132x100.png/cc0000/ffffff",
     "recipe": "Chervil - Fresh",
+    "price": 3200,
     "id": 8
   },
   {
     "Title": "Wine - Delicato Merlot",
     "image": "http://dummyimage.com/222x100.png/cc0000/ffffff",
     "recipe": "Sauce - Sesame Thai Dressing",
+    "price": 3200,
     "id": 9
   },
   {
     "Title": "French Pastry - Mini Chocolate",
     "image": "http://dummyimage.com/249x100.png/ff4444/ffffff",
     "recipe": "Wine - Magnotta - Bel Paese White",
+    "price": 3200,
     "id": 10
   }
 ]
