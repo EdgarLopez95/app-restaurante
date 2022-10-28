@@ -1,9 +1,9 @@
-class Pelicula {
-  constructor(titulo, duracion, director, linkTrailer) {
-    this.titulo = titulo;
-    this.duracion = duracion;
-    this.director = director;
-    this.linkTrailer = linkTrailer;
+class Plato {
+  constructor(image, title, recipe, price) {
+    this.image = image;
+    this.title = title;
+    this.recipe = recipe;
+    this.price = price;
   }
 }
 
@@ -24,16 +24,16 @@ function manejadorSubmitMesa(e) {
 
   const mesaSeleccionada = document.getElementById("platosSeleccionados");
 
-  const peliculas = JSON.parse(localStorage.getItem(mesa));
+  const platosEnLocalStorage = JSON.parse(localStorage.getItem(mesa));
 
-  if (peliculas == null || peliculas == "") {
+  if (platosEnLocalStorage == null || platosEnLocalStorage == "") {
     mesaSeleccionada.innerHTML = "<h1>Agregue el pedido </h1>";
   } else {
-    mostrarPeliculas(peliculas);
+    mostrarPlatosSeleccionados(platosEnLocalStorage);
   }
-  mostrarCardsCarta();
+  mostrarListadePlatos();
 }
-function mostrarCardsCarta() {
+function mostrarListadePlatos() {
   const contenedorOpciones = document.getElementById("opciones");
   opciones.innerHTML = `<h3>Platos de la mesa ${mesa}</h3>`;
   fetch(`../js/food.json`)
@@ -41,79 +41,90 @@ function mostrarCardsCarta() {
     .then((platos) => {
       platos.forEach((plato) => {
         let div = document.createElement("div");
+        div.classList.add("section__plato");
         div.innerHTML = `
-        <hr> 
-        ${plato.image} - 
-        ${plato.Title} -
-        ${plato.recipe} -
-        ${plato.price}
+        
+        <img src="${plato.image}" alt="Imagen del plato">
+        <h3>${plato.Title}</h3>
+        <p>${plato.recipe}</p>
+        <h4> ${plato.price}</h4>
         `;
-        const button = document.createElement("button");
-        div.append(button);
-        button.innerText = "agregar plato";
-        button.addEventListener("click", () => {
-          agregarPelicula(plato);
+        const buttonAdd = document.createElement("button");
+        div.append(buttonAdd);
+        buttonAdd.innerText = "agregar plato";
+        buttonAdd.addEventListener("click", () => {
+          agregarPlatoEnMesa(plato);
         });
 
-        contenedorOpciones.appendChild(div);
+        contenedorOpciones.append(div);
       });
     });
 }
-function agregarPelicula(plato) {
-  const titulo = plato.Title;
-  const duracion = plato.image;
-  const director = plato.recipe;
-  const linkTrailer = plato.price;
-  const pelicula = new Pelicula(titulo, duracion, director, linkTrailer);
+function agregarPlatoEnMesa(plato) {
+  const title = plato.Title;
+  const image = plato.image;
+  const recipe = plato.recipe;
+  const price = plato.price;
 
-  const peliculasEnLocalStorage = JSON.parse(localStorage.getItem(mesa));
+  const platos = new Plato(image, title, recipe, price);
 
-  if (peliculasEnLocalStorage == null) {
-    localStorage.setItem(mesa, JSON.stringify([pelicula]));
-    mostrarPeliculas([pelicula]);
+  const platosEnLocalStorage = JSON.parse(localStorage.getItem(mesa));
+
+  if (platosEnLocalStorage == null) {
+    localStorage.setItem(mesa, JSON.stringify([platos]));
+    mostrarPlatosSeleccionados([platos]);
   } else {
-    peliculasEnLocalStorage.push(pelicula);
-    localStorage.setItem(mesa, JSON.stringify(peliculasEnLocalStorage));
-    mostrarPeliculas(peliculasEnLocalStorage);
+    platosEnLocalStorage.push(platos);
+    localStorage.setItem(mesa, JSON.stringify(platosEnLocalStorage));
+    mostrarPlatosSeleccionados(platosEnLocalStorage);
   }
 }
 
-function mostrarPeliculas(peliculas) {
+function mostrarPlatosSeleccionados(platos) {
   let platosSeleccionados = document.getElementById("platosSeleccionados");
   platosSeleccionados.innerHTML = "";
 
-  peliculas.forEach((pelicula) => {
+  platos.forEach((platos) => {
     let li = document.createElement("li");
     li.innerHTML = `
-      <hr> ${pelicula.titulo.toUpperCase()} - ${pelicula.duracion} minutos - 
-      ${pelicula.director} - 
-      <a href="${pelicula.linkTrailer}" target="blank"> Ver trailer </a>`;
-    const botonBorrar = crearBotonEliminar(pelicula);
+      <hr> ${platos.image} - ${platos.title} - 
+      ${platos.recipe} - ${platos.price}`;
+    const botonBorrar = crearBotonEliminar(platos);
     li.appendChild(botonBorrar);
     platosSeleccionados.appendChild(li);
   });
 }
 
-function crearBotonEliminar(pelicula) {
+function crearBotonEliminar(platos) {
   const botonBorrar = document.createElement("button"); // <button>Borrar</button>
   botonBorrar.innerText = "Borrar";
   botonBorrar.addEventListener("click", () => {
-    eliminarPelicula(pelicula);
+    eliminarPelicula(platos);
   });
   return botonBorrar;
 }
 
-function eliminarPelicula(pelicula) {
+function eliminarPelicula(platos) {
   const mesaSeleccionada = document.getElementById("platosSeleccionados");
-  const peliculasEnLocalStorage = JSON.parse(localStorage.getItem(mesa));
-  const nuevoArray = peliculasEnLocalStorage.filter(
-    (item) => item.titulo != pelicula.titulo
-  );
-  localStorage.setItem(mesa, JSON.stringify(nuevoArray));
+  const mesasEnLocalStorage = JSON.parse(localStorage.getItem(mesa));
 
-  mostrarPeliculas(nuevoArray);
+  let index = mesasEnLocalStorage.findIndex((i) => {
+    i.title === platos.title;
+  });
+  mesasEnLocalStorage.splice(index, 1);
+  //console.log(index);
+  // if (index !== -1) {
+  //   mesasEnLocalStorage.splice(index, 1);
+  // }
 
-  if (nuevoArray == "") {
+  //   const condicionBorrar = (item) => item.title != platos.title;
+  //   const nuevoArray = mesasEnLocalStorage.filter(condicionBorrar);
+  console.log(mesasEnLocalStorage);
+  localStorage.setItem(mesa, JSON.stringify(mesasEnLocalStorage));
+
+  mostrarPlatosSeleccionados(mesasEnLocalStorage);
+  //console.log(mesasEnLocalStorage);
+  if (mesasEnLocalStorage == "") {
     mesaSeleccionada.innerHTML = "<h1>Agregue el pedido </h1>";
   }
 }
