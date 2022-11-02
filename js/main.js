@@ -35,9 +35,9 @@ function manejadorSubmitMesa(e) {
 }
 function mostrarListadePlatos() {
   const contenedortitulo = document.getElementById("tituloPlato");
-  contenedortitulo.innerHTML = `<h3>Platos de la mesa ${mesa}</h3>`;
+  contenedortitulo.innerHTML = `<h3 class="platosMesa">Platos de la mesa ${mesa}</h3>`;
   const contenedorOpciones = document.getElementById("opciones");
- 
+
   fetch(`../js/food.json`)
     .then((res) => res.json())
     .then((platos) => {
@@ -47,9 +47,11 @@ function mostrarListadePlatos() {
         div.innerHTML = `
         
         <img src="${plato.image}" alt="Imagen del plato">
+        <div class="contenedor_infoPlato">
         <h3>${plato.Title}</h3>
         <p>${plato.recipe}</p>
         <h4> ${plato.price}</h4>
+        </div>
         `;
         const buttonAdd = document.createElement("button");
         div.append(buttonAdd);
