@@ -37,7 +37,7 @@ function mostrarListadePlatos() {
   const contenedortitulo = document.getElementById("tituloPlato");
   contenedortitulo.innerHTML = `<h3 class="platosMesa">Platos de la mesa ${mesa}</h3>`;
   const contenedorOpciones = document.getElementById("opciones");
-
+  contenedorOpciones.innerHTML = "";
   fetch(`../js/food.json`)
     .then((res) => res.json())
     .then((platos) => {

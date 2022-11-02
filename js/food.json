@@ -1,72 +1,72 @@
 [
   {
-    "Title": "Comida 1",
-    "image": "../assets/img/1.png",
-    "recipe": "Olives - Black, Pitted",
-    "price": 3200,
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
     "id": 1
   },
   {
-    "Title": "Comida 2",
-    "image": "../assets/img/2.png",
-    "recipe": "Beef - Eye Of Round",
-    "price": 3200,
-    "id": 2
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 3",
-    "image": "../assets/img/3.png",
-    "recipe": "Salmon - Sockeye Raw",
-    "price": 3200,
-    "id": 3
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 4",
-    "image": "../assets/img/4.png",
-    "recipe": "Mustard - Individual Pkg",
-    "price": 3200,
-    "id": 4
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 5",
-    "image": "../assets/img/5.png",
-    "recipe": "Lid Coffeecup 12oz D9542b",
-    "price": 3200,
-    "id": 5
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 6",
-    "image": "../assets/img/1.png",
-    "recipe": "Soup - Campbells Chili",
-    "price": 3200,
-    "id": 6
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 7",
-    "image": "../assets/img/2.png",
-    "recipe": "Skirt - 24 Foot",
-    "price": 3200,
-    "id": 7
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 8",
-    "image": "../assets/img/3.png",
-    "recipe": "Chervil - Fresh",
-    "price": 3200,
-    "id": 8
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 9",
-    "image": "../assets/img/4.png",
-    "recipe": "Sauce - Sesame Thai Dressing",
-    "price": 3200,
-    "id": 9
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   },
   {
-    "Title": "Comida 10",
-    "image": "../assets/img/5.png",
-    "recipe": "Wine - Magnotta - Bel Paese White",
-    "price": 3200,
-    "id": 10
+    "Title": "Carne asada",
+    "image": "../assets/img/carne-asada.png",
+    "recipe": "Carne 300 gr - salsa de la casa - ensalada - papas",
+    "price": 32000,
+    "id": 1
   }
 ]
