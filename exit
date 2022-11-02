@@ -1,0 +1,60 @@
+[33mcommit 5756c2363ed9b97956d9094f313346f97314b65b[m[33m ([m[1;36mHEAD -> [m[1;32mdesarrollo[m[33m)[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Wed Nov 2 12:56:05 2022 -0500
+
+    imagenes
+
+[33mcommit c7969d78a2a3a3b25109066dca56895fed7b8e2a[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Wed Nov 2 12:55:29 2022 -0500
+
+    añadi las nuevas imágenes
+
+[33mcommit 07f64878de13987ff255738ae20b1c358dde191f[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Wed Nov 2 11:36:08 2022 -0500
+
+    dando estilos
+
+[33mcommit 595e7893dc4ca35232adf28c1e424c8b772691e4[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Wed Nov 2 09:38:49 2022 -0500
+
+    Dandole estilos
+
+[33mcommit e68a857c4435d5025ef22883223e39fd4d6c53cb[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Fri Oct 28 17:44:45 2022 -0500
+
+    terminé el algoritmo para eliminer solo un plato repetido y comence a darle estilos
+
+[33mcommit 3cd2f4377098c787825cd967e15c1760111841e4[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Tue Oct 25 00:44:16 2022 -0500
+
+    estaba creando el mensaje por si el array estaba vacio
+
+[33mcommit ec249cd1f8527e2aef3b7b5e00f85525dd55ff83[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Tue Oct 25 00:24:03 2022 -0500
+
+    puliendo funcinalidades
+
+[33mcommit 46befd9eccf8a97ccc91a02a3e4f951fd90b9d82[m
+Merge: c28e0be 8293773
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Mon Oct 24 22:46:28 2022 -0500
+
+    Merge branch 'main' of github.com:EdgarLopez95/app-restaurante into main
+
+[33mcommit c28e0beeefd93f04b9113de65fde660cf80b3326[m
+Author: Edgar Felipe <edgar_felipe13@hotmail.com>
+Date:   Mon Oct 24 22:44:30 2022 -0500
+
+    creando el proyecto
+
+[33mcommit 82937738d2b6f13e599ec2d5418f1c2a033b8362[m
+Author: Edgar Felipe Lopez Acosta <98477581+EdgarLopez95@users.noreply.github.com>
+Date:   Mon Oct 24 22:42:57 2022 -0500
+
+    Initial commit
