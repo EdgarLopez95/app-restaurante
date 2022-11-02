@@ -34,8 +34,10 @@ function manejadorSubmitMesa(e) {
   mostrarListadePlatos();
 }
 function mostrarListadePlatos() {
+  const contenedortitulo = document.getElementById("tituloPlato");
+  contenedortitulo.innerHTML = `<h3>Platos de la mesa ${mesa}</h3>`;
   const contenedorOpciones = document.getElementById("opciones");
-  opciones.innerHTML = `<h3>Platos de la mesa ${mesa}</h3>`;
+ 
   fetch(`../js/food.json`)
     .then((res) => res.json())
     .then((platos) => {

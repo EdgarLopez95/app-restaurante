@@ -1,8 +1,15 @@
 :root {
+  --shadow-color: 0deg 0% 83%;
+  --shadow-elevation-low: 0px 0.3px 0.4px hsl(var(--shadow-color) / 0.24),
+    0px 1.2px 1.5px -1.7px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-medium: 0px 0.3px 0.4px hsl(var(--shadow-color) / 0.34),
+    0.1px 5.8px 7.2px -1.7px hsl(var(--shadow-color) / 0.5);
+  --shadow-elevation-high: 0px 0.3px 0.4px hsl(var(--shadow-color) / 0.42),
+    0.1px 6.2px 7.7px -0.8px hsl(var(--shadow-color) / 0.55),
+    0.2px 24.1px 30px -1.7px hsl(var(--shadow-color) / 0.68);
   --negro: #393939;
-
   /* Tipografía */
-  --tipo-principal: 'Roboto', sans-serif;;
+  --tipo-principal: "Lato", sans-serif;
   --tipo-secundaria: Verdana;
 }
 
@@ -32,19 +39,19 @@
 }
 
 /* Evitamos problemas con las imagenes */
-img,
-picture,
-video,
-iframe,
-figure {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-  /* opcional */
-  object-fit: cover;
-  /* opcional */
-  object-position: center center;
-}
+// img,
+// picture,
+// video,
+// iframe,
+// figure {
+//   max-width: 100%;
+//   width: 100%;
+//   display: block;
+//   /* opcional */
+//   object-fit: cover;
+//   /* opcional */
+//   object-position: center center;
+// }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
 a {
@@ -149,7 +156,7 @@ body {
   font-family: var(--tipo-principal);
   color: var(--negro);
   /* opcional */
-  
+
   /* opcional */
   hyphens: auto;
   /* opcional */
